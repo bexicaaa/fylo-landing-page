@@ -1,0 +1,37 @@
+.light {
+  background-color: $light-grayish-blue;
+  margin-top: 3rem;
+}
+
+
+.first {
+
+  &__image {
+    @include sectionImage;
+  }
+}
+
+h2 {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.tm {
+  margin: 0 1.5rem;
+
+  &__text {
+    text-align: left;
+    color: $secondary-color;
+    margin: 1rem 0;
+   }
+
+
+  &__link {
+    color: $moderate-cyan;
+    text-decoration: underline;
+
+    &:hover {
+     color: lighten($moderate-cyan, 20%);
+    }
+  } 
+}

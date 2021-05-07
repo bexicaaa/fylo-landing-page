@@ -1,0 +1,39 @@
+.access {
+    color: $light-grayish-blue;
+    background-color: $secondary-color;
+    padding: 2rem;
+
+    &__info {
+      padding-bottom: 2rem;
+    }
+  }
+
+.form {
+
+  &__input {
+   border: 1px solid $secondary-color;
+   border-radius: 2px;
+   color: $light-gray;
+   padding: 0.5rem;
+   width: 70%;
+   margin-bottom: 1rem;
+  }
+
+      &__button {
+      background-color: $bright-blue;
+      cursor: pointer;
+      width: 70%;
+      border-radius: 2px;
+      border: 2px solid $bright-blue;
+      padding: 0.3rem;
+      font-weight: map-get($font-weights, bold);
+      }
+}
+
+ 
+   
+   
+
+
+
+  

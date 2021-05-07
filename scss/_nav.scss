@@ -1,0 +1,30 @@
+
+.nav {
+  @include flexCenter;
+  padding: 2rem 1.5rem;
+
+   &__img {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: 50%;
+  }
+
+  &__menu {
+ display: flex;
+ justify-content: flex-end;
+ list-style-type: none;
+ font-size: 0.8rem;
+  }
+
+  &__links {
+   padding-left: 0.5rem;
+   color: $primary-color;
+   font-weight: map-get($font-weights, regular);
+ }
+  a {
+    text-decoration: none;
+  }
+}
+
+

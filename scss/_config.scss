@@ -1,0 +1,74 @@
+/*PRIMARY COLORS*/
+
+$primary-color: hsl(243, 87%, 12%);
+$secondary-color: hsl(238, 22%, 44%);
+
+
+/* ACCENT COLORS*/
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+
+/* NEUTRAL COLORS*/
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+
+/* FONT WEIGHTS */
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+/*MIXINS*/
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin sectionImage {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin imageResponsive {
+  max-width: 50%;
+  height: auto;
+}
+
+/*MIXINS - Responsive*/
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+/*RESETS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
